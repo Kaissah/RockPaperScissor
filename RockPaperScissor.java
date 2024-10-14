@@ -3,9 +3,6 @@ package rockpaperscissor;
 import java.util.Scanner;
 public class RockPaperScissor {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         int score=0;
@@ -19,8 +16,7 @@ public class RockPaperScissor {
         System.out.print("Enter choice: ");
        
         String choice = sc.nextLine().toLowerCase();
-        if(choice.equals("rock")||choice.equals("paper")||choice.equals("scissor")){
-            
+        if(choice.equals("rock")||choice.equals("paper")||choice.equals("scissor")){   
         String Bot="";
         
             if(A==0||A<=33){
@@ -45,12 +41,10 @@ public class RockPaperScissor {
                 
             if("paper".equals(choice)&&"Rock".equals(Bot) || "rock".equals(choice)&&"Scissor".equals(Bot) || "scissor".equals(choice)&&"Paper".equals(Bot))
                 {   score++;
-                    System.out.println("You Win");}
-                               
+                    System.out.println("You Win");
+                }                               
                System.out.println("YOU-" +score +" | BOT-"+botscore);
-           
         }
-  
         else{
             System.out.println("Invalid Input!");}
             boolean input=true;
@@ -71,12 +65,10 @@ public class RockPaperScissor {
                     System.out.println("Invalid input! try again");
                     input=false;
                 }
-        }while(input==false);
+            }while(input==false);
             
         }while(state==true);
             System.out.println("Thank you for playing");
             System.exit(0);
-        
-    }
-    
+    }    
 }
